@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Scripts\EnemyClass.cs" />
+    <Compile Include="Assets\_Scripts\TestDummy.cs" />
     <Compile Include="Assets\_Scripts\Waypoint.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/nickc/Desktop/Unity Projects/Dasher/Dasher/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

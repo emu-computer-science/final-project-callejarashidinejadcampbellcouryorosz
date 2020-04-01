@@ -97,9 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
-  dmg: 1
-  spd: 2
-  target: {fileID: 0}
+  dmg: 3
+  spd: 4
+  attSpd: 0.5
+  isRanged: 0
+  state: 0
 --- !u!50 &4264976906650686891
 Rigidbody2D:
   serializedVersion: 4
