@@ -4,26 +4,32 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
+    //Set to display sword by default
     public static int currentWeapon = 1;
     public GameObject sword, gun;
     public LineRenderer burst;
+
+    //For animations
     public Animator animator;
+
+    //Start point for all attacks
     public Transform attackPoint;
 
     public static float swordAttackRange = 0.5f;
 
+
     public static float attackRate = 2f;
     public static float nextAttackTime = 0f;
+
 
     public LayerMask enemiesLayer;
     public static int attackDamage = 5;
 
     public GameObject bulletPrefab;
 
-
-
     void Start()
     {
+        //Controls what weapons are displayed by defualt
         sword.SetActive(true);
         gun.SetActive(false);
         //burst.SetActive(false);
@@ -36,6 +42,7 @@ public class PlayerCombat : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 attack();
+                //Resets attack timer
                 nextAttackTime = Time.time + 1f / attackRate;
             }
         }
@@ -57,6 +64,7 @@ public class PlayerCombat : MonoBehaviour
 
     void attack()
     {
+        //Checks what attack to do based on what weapon is equipped
         if (currentWeapon == 1)
         {
             swordAttack();
@@ -67,6 +75,7 @@ public class PlayerCombat : MonoBehaviour
         }
         if (currentWeapon == 3)
         {
+            //Enabled line renderer so it can be seen
             burst.enabled = true;
             StartCoroutine(burstAttack());
         }
@@ -74,7 +83,7 @@ public class PlayerCombat : MonoBehaviour
 
     void switchWeapon(int weaponSelection)
     {
-        //Add animations for switching weapons here
+        //Put current weapon away
         switch (currentWeapon)
         {
             case 1: //Animation here
@@ -89,6 +98,7 @@ public class PlayerCombat : MonoBehaviour
             default: break;
         }
 
+        //Get weapon selection out
         switch (weaponSelection)
         {
             case 1: //Animation here
@@ -111,6 +121,7 @@ public class PlayerCombat : MonoBehaviour
                 break;
         }
 
+        //Update current wepon
         currentWeapon = weaponSelection;
     }
 
@@ -118,6 +129,7 @@ public class PlayerCombat : MonoBehaviour
     {
 
         //animator.SetTrigger("Sword Attack");
+        //Damages all enemies within Circle
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, swordAttackRange, enemiesLayer);
         for (int i = 0; i < hitEnemies.Length; i++)
         {
@@ -127,6 +139,7 @@ public class PlayerCombat : MonoBehaviour
 
     void gunAttack()
     {
+        //Fires a bullet
         Instantiate(bulletPrefab, attackPoint.position, attackPoint.rotation);
     }
 
@@ -136,29 +149,34 @@ public class PlayerCombat : MonoBehaviour
         if (hitInfo)
         {
             EnemyClass enemy = hitInfo.transform.GetComponent<EnemyClass>();
+            //If enemy was hit they take damage
             if (enemy != null)
             {
                 enemy.takeDamage(attackDamage);
             }
+            //Creates line from attackPoint to enemy
             burst.SetPosition(0, attackPoint.position);
             burst.SetPosition(1, hitInfo.point);
+            //Makes line last temporarily
             yield return new WaitForSeconds(.2f);
 
         }
 
         else
         {
+            //If no enemy is hit it travels onwards till it is disabled after wait for seconds
             burst.SetPosition(0, attackPoint.position);
             burst.SetPosition(1, attackPoint.position + attackPoint.right * -100);
             yield return new WaitForSeconds(.2f);
         }
 
+        //Line renderer is disabled
         burst.enabled = false;
-
     }
 
     void OnDrawGizmosSelected()
     {
+        //Just so we can see how big the size needs to be
         Gizmos.DrawWireSphere(attackPoint.position, swordAttackRange);
     }
 }
