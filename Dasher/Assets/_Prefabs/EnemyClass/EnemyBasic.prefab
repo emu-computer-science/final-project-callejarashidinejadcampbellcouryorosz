@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4264976906650686884}
   - component: {fileID: 4264976906650686891}
   - component: {fileID: 4264976906650686890}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyBasic
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -250,6 +250,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Waypoints [Back and Forth]
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620567864011110158, guid: 44aba4deeb6765247992988d168e9716,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620567864630661094, guid: 44aba4deeb6765247992988d168e9716,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620567865601129979, guid: 44aba4deeb6765247992988d168e9716,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44aba4deeb6765247992988d168e9716, type: 3}

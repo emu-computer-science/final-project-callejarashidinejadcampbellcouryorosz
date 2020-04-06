@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerPhysics : MonoBehaviour
 {
     public LayerMask collisionMask;
-    private BoxCollider collider;
+    private BoxCollider2D collider;
     Vector3 s;
     Vector3 c;
 
@@ -20,12 +20,13 @@ public class PlayerPhysics : MonoBehaviour
 
     private void Start()
     {
-        collider = GetComponent<BoxCollider>();
+        collider = GetComponent<BoxCollider2D>();
         s = collider.size;
-        c = collider.center;
+        c = collider.offset;
     }
 
-    public void Move(Vector2 moveAmount) {
+    public void Move(Vector2 moveAmount)
+    {
 
         float deltaY = moveAmount.y;
         float deltaX = moveAmount.x;
@@ -33,15 +34,17 @@ public class PlayerPhysics : MonoBehaviour
 
         grounded = false;
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++)
+        {
             float dir = Mathf.Sign(deltaY);
-            float x = (p.x + c.x - s.x/2) + s.x/2 * i; //left, center, and rightmost point of collider
-            float y = p.y + c.y + s.y/2 * dir; //bottom of collider
+            float x = (p.x + c.x - s.x / 2) + s.x / 2 * i; //left, center, and rightmost point of collider
+            float y = p.y + c.y + s.y / 2 * dir; //bottom of collider
 
             ray = new Ray(new Vector2(x, y), new Vector2(0, dir));
             Debug.DrawRay(ray.origin, ray.direction);
 
-            if (Physics.Raycast(ray, out hit, Mathf.Abs(deltaY), collisionMask)) {
+            if (Physics.Raycast(ray, out hit, Mathf.Abs(deltaY), collisionMask))
+            {
                 //Get distance between player and ground
                 float dst = Vector3.Distance(ray.origin, hit.point);
 
@@ -50,7 +53,8 @@ public class PlayerPhysics : MonoBehaviour
                 {
                     deltaY = -dst + skin;
                 }
-                else {
+                else
+                {
                     deltaY = 0;
                 }
 
