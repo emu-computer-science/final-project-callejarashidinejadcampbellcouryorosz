@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/_Scenes/Train Scene.unity
+=======
+- path: Assets/_Scenes/PlayerMovement.unity
+>>>>>>> PlayerMovement
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -157,7 +157,11 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
+<<<<<<< HEAD
   m_BackGroundColor: {r: 0.26415092, g: 0.22640619, b: 0.046101812, a: 0}
+=======
+  m_BackGroundColor: {r: 0.5471698, g: 0.038714837, b: 0.06170882, a: 0}
+>>>>>>> PlayerMovement
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -204,6 +208,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &2620567865100358757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -341,3 +346,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82f26b926db7fbd4393847f4e0f6167d, type: 3}
+=======
+>>>>>>> PlayerMovement

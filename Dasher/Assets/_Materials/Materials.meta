@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Dasher/Assets/_Materials/Materials.meta
 guid: 2577697ca15579a409c1c770f2aeabca
+=======
+guid: 55ecfc9826a30a64bb099fa57152ec8b
+>>>>>>> PlayerMovement:Dasher/Assets/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
