@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/_Scenes/Train Scene.unity
-=======
-- path: Assets/_Scenes/PlayerMovement.unity
->>>>>>> PlayerMovement
+- path: Assets/_Scenes/Prototype Demo.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
