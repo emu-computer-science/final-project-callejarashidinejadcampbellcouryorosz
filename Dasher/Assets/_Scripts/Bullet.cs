@@ -10,9 +10,14 @@ public class Bullet : MonoBehaviour
     private int damage = PlayerCombat.attackDamage;
     void Start()
     {
-        //Till we get player moving -1 stays. Will change with player controller
-        //Makes bullet move
-        rb.velocity = transform.right * speed * -1;
+
+        //Makes bullet move in direction player is facing
+
+        if (TestDummyContorller.facingRight)
+            rb.velocity = transform.right * speed;
+        else
+            rb.velocity = transform.right * speed * -1;
+
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)

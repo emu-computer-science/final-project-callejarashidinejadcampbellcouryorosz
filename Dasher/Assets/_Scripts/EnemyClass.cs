@@ -165,7 +165,7 @@ public class EnemyClass : MonoBehaviour
             if (Vector2.Distance(transform.position, player.transform.position) < 3f)
             {
 
-                TestDummy d = player.GetComponent<TestDummy>();
+                TestDummyContorller d = player.GetComponent<TestDummyContorller>();
 
                 // If the Player is alive
                 if (d != null)
