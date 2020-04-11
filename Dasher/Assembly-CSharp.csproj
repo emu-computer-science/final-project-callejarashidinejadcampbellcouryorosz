@@ -47,10 +47,17 @@
   <ItemGroup>
      <Compile Include="Assets\_Scripts\Bullet.cs" />
      <Compile Include="Assets\_Scripts\EnemyClass.cs" />
+     <Compile Include="Assets\_Scripts\HealthPotion.cs" />
+     <Compile Include="Assets\_Scripts\Inventory.cs" />
+     <Compile Include="Assets\_Scripts\Pickup.cs" />
+     <Compile Include="Assets\_Scripts\PickupInventory.cs" />
+     <Compile Include="Assets\_Scripts\PlayerAim.cs" />
      <Compile Include="Assets\_Scripts\PlayerClass.cs" />
      <Compile Include="Assets\_Scripts\PlayerCombat.cs" />
      <Compile Include="Assets\_Scripts\PlayerControllerInput.cs" />
      <Compile Include="Assets\_Scripts\PlayerPhysics.cs" />
+     <Compile Include="Assets\_Scripts\Slot.cs" />
+     <Compile Include="Assets\_Scripts\SpawnItem.cs" />
      <Compile Include="Assets\_Scripts\TestDummy.cs" />
      <Compile Include="Assets\_Scripts\TestDummyContorller.cs" />
      <Compile Include="Assets\_Scripts\Train.cs" />

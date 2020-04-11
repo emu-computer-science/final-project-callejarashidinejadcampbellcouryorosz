@@ -140,7 +140,7 @@ public class PlayerCombat : MonoBehaviour
     void gunAttack()
     {
         //Fires a bullet
-        Instantiate(bulletPrefab, attackPoint.position, attackPoint.rotation);
+        //Instantiate(bulletPrefab, attackPoint.position, attackPoint.rotation);
     }
 
     //Uses raycasting to trace a path either to hit object or out into distance
