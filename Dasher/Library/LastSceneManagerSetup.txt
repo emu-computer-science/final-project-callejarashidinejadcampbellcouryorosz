@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/_Scenes/_Overhaul/Overhaul.unity
-=======
-- path: Assets/_Scenes/InventoryandWeapons.unity
->>>>>>> eaaea58624e8e684c80b4ff2a10fe4308d65a157
   isLoaded: 1
   isActive: 1
   isSubScene: 0
