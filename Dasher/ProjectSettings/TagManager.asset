@@ -4,12 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Background
+  - Function
   - Ground
   - Edge
-  - Collectable
-  - Function
+  - Potions
+  - Waypoints
   - Enemy
-  - Background
+  - Collectable
   layers:
   - Default
   - TransparentFX
@@ -45,14 +47,14 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 2204165131
+    uniqueID: 2535910953
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Player
-    uniqueID: 1444278125
+    uniqueID: 4000712603
     locked: 0
   - name: Foreground
-    uniqueID: 1600391503
+    uniqueID: 1563315979
     locked: 0

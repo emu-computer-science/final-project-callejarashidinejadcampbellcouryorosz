@@ -20,9 +20,11 @@ public class TestDummyContorller : MonoBehaviour
     private int extraJumps;
 
     public float hp;
+    public float maxhp;
 
     void Start()
     {
+        maxhp = 20;
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
     }
