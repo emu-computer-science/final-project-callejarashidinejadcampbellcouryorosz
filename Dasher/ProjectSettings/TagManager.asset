@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Collectable
   - Background
+  - Function
   layers:
   - Default
   - TransparentFX
