@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/_Scenes/InventoryandWeapons.unity
+=======
+- path: Assets/_Scenes/Train Scene.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1
   isSubScene: 0

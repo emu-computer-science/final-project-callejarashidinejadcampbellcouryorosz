@@ -4,10 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
-  - Waypoints
   - Ground
+<<<<<<< HEAD
   - Potions
+=======
+  - Edge
+  - Collectable
+  - Function
+  - Enemy
+  - Background
+>>>>>>> master
   layers:
   - Default
   - TransparentFX
@@ -17,9 +23,9 @@ TagManager:
   - UI
   - 
   - 
+  - Background
   - Player
-  - Enemies
-  - Ground
+  - Foreground
   - 
   - 
   - 
@@ -42,9 +48,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2204165131
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Player
-    uniqueID: 1716554317
+    uniqueID: 1444278125
+    locked: 0
+  - name: Foreground
+    uniqueID: 1600391503
     locked: 0
