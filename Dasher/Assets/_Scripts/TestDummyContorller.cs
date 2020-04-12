@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TestDummyContorller : MonoBehaviour
 {
@@ -65,6 +66,18 @@ public class TestDummyContorller : MonoBehaviour
         if (hp <= 0)
         {
             Death();
+        }
+        if (transform.position.y < -20)
+        {
+            Death();
+        }
+        if(transform.position.x>34 & transform.position.y < -5 & SceneManager.GetActiveScene().name=="Train Scene")
+        {
+            SceneManager.LoadScene("Inside", LoadSceneMode.Single);
+        }
+        if (transform.position.x > 47 & SceneManager.GetActiveScene().name == "Inside")
+        {
+            SceneManager.LoadScene("Train Scene", LoadSceneMode.Single);
         }
     }
 
