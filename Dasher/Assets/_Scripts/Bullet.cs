@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
             enemy.takeDamage(damage);
         }
         //Destroyes bullet on collision with any but player
-        if (hitInfo.gameObject.tag != "Player")
+        if (hitInfo.gameObject.tag != "Player" || hitInfo.gameObject.tag != "Potions")
             Destroy(gameObject);
     }
 }
