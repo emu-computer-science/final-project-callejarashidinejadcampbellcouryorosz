@@ -347,6 +347,7 @@ MonoBehaviour:
     m_Bits: 1024
   extraJumpsValue: 1
   hp: 10
+  maxhp: 10
 --- !u!114 &7405572872113419998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +438,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1716554317
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d109d9696e6fd1e45baa0599b671c7af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
