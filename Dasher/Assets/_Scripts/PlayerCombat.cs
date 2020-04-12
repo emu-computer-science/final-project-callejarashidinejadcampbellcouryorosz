@@ -27,19 +27,19 @@ public class PlayerCombat : MonoBehaviour
 
     public GameObject bulletPrefab;
 
+
     void Start()
     {
         //Controls what weapons are displayed by defualt
         sword.SetActive(true);
         gun.SetActive(false);
-        //burst.SetActive(false);
     }
 
     void Update()
     {
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetMouseButton(0))
             {
                 attack();
                 //Resets attack timer
@@ -140,12 +140,26 @@ public class PlayerCombat : MonoBehaviour
     void gunAttack()
     {
         //Fires a bullet
-        Instantiate(bulletPrefab, attackPoint.position, attackPoint.rotation);
+        //Instantiate(bulletPrefab, attackPoint.position, attackPoint.rotation);
     }
 
+    //Uses raycasting to trace a path either to hit object or out into distance
+    //IEnumerator is only so I can make the burst effect last temporarily before being gone
     IEnumerator burstAttack()
     {
-        RaycastHit2D hitInfo = Physics2D.Raycast(attackPoint.position, attackPoint.right * -1);
+        //What you hit. (Enemies, Obstacles, and the like)
+        RaycastHit2D hitInfo;
+        if (TestDummyContorller.facingRight)
+        {
+            hitInfo = Physics2D.Raycast(attackPoint.position, attackPoint.right);
+        }
+
+        else
+        {
+            hitInfo = Physics2D.Raycast(attackPoint.position, attackPoint.right * -1);
+        }
+
+        //If you hit an enemy do damage and draw the ray to hit enemy
         if (hitInfo)
         {
             EnemyClass enemy = hitInfo.transform.GetComponent<EnemyClass>();
@@ -166,7 +180,16 @@ public class PlayerCombat : MonoBehaviour
         {
             //If no enemy is hit it travels onwards till it is disabled after wait for seconds
             burst.SetPosition(0, attackPoint.position);
-            burst.SetPosition(1, attackPoint.position + attackPoint.right * -100);
+            if (TestDummyContorller.facingRight)
+            {
+                Debug.Log(TestDummyContorller.facingRight);
+                burst.SetPosition(1, attackPoint.position + attackPoint.right * 100);
+            }
+            else
+            {
+                Debug.Log(TestDummyContorller.facingRight);
+                burst.SetPosition(1, attackPoint.position + attackPoint.right * -100);
+            }
             yield return new WaitForSeconds(.2f);
         }
 

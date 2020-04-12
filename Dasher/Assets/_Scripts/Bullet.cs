@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 20f;
+    private float speed = 20f;
     public Rigidbody2D rb;
     //Retrieves damage from PlayerCombat class
     private int damage = PlayerCombat.attackDamage;
+    private float lifeTime = 1f;
     void Start()
     {
-        //Till we get player moving -1 stays. Will change with player controller
-        //Makes bullet move
-        rb.velocity = transform.right * speed * -1;
+
+        //Makes bullet move in direction player is facing
+
+        if (TestDummyContorller.facingRight)
+            rb.velocity = transform.right * speed;
+        else
+            rb.velocity = transform.right * speed * -1;
+        Destroy(gameObject, lifeTime);
+
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
@@ -23,8 +30,9 @@ public class Bullet : MonoBehaviour
         {
             enemy.takeDamage(damage);
         }
-        //Destroyes bullet on collision
-        Destroy(gameObject);
+        //Destroyes bullet on collision with any but player
+        if (hitInfo.gameObject.tag != "Player" || hitInfo.gameObject.tag != "Potions")
+            Destroy(gameObject);
     }
 }
 
