@@ -7,6 +7,10 @@ TagManager:
   - Enemy
   - Waypoints
   - Ground
+  - Collectable
+  - Background
+  - Function
+  - Edge
   layers:
   - Default
   - TransparentFX
@@ -16,9 +20,9 @@ TagManager:
   - UI
   - 
   - 
+  - Background
+  - Foreground
   - Player
-  - Enemies
-  - Ground
   - 
   - 
   - 
@@ -41,9 +45,19 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1716554317
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Player
+<<<<<<< HEAD
     uniqueID: 1716554317
+=======
+    uniqueID: 3723599805
+    locked: 0
+  - name: Foreground
+    uniqueID: 2171277803
+>>>>>>> overhaul
     locked: 0
