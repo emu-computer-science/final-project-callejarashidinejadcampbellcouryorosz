@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     }
     
     // Method to take damage as the player
-    public void takeDamage(int damage)
+    public void takeDamageP(int damage)
     {
         // Health - damage is the new Health
         hp = hp - damage;
