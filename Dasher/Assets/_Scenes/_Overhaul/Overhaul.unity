@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 18742499}
   - component: {fileID: 18742500}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -188,8 +188,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2750943f2e7637c4c831e42f5183038c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -202,133 +202,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &27455641
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 27455642}
-  - component: {fileID: 27455643}
-  - component: {fileID: 27455644}
-  m_Layer: 10
-  m_Name: Edge Detector (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &27455642
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27455641}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.62, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2092687471}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &27455643
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27455641}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.24165234, y: -0.00000017881393}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.024268806, y: 0.5258131}
-  m_EdgeRadius: 0
---- !u!114 &27455644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27455641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad4290007899ebd4bb448ae404d8b868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &51506733
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 51506734}
-  - component: {fileID: 51506735}
-  m_Layer: 10
-  m_Name: Train Edge (2)
-  m_TagString: Edge
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &51506734
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51506733}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.470886, y: -0.28232288, z: -25.03093}
-  m_LocalScale: {x: 1.9902, y: 1.9902, z: 1.9902}
-  m_Children: []
-  m_Father: {fileID: 1587142073}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &51506735
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51506733}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.026210696, y: 0.2789399}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.29752702, y: 1.5578798}
-  m_EdgeRadius: 0
 --- !u!1 &165752602
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165752604}
   - component: {fileID: 165752603}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -399,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 197911896}
   - component: {fileID: 197911897}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -456,8 +329,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f27eddcc0dccf5243961abd8260a1d10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -480,7 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 225148859}
   - component: {fileID: 225148860}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -537,8 +410,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc3caf253ce83974aa6532c87bcf2814, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -564,7 +437,7 @@ GameObject:
   - component: {fileID: 259553573}
   - component: {fileID: 259553576}
   - component: {fileID: 259553577}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Gold Coin
   m_TagString: Collectable
   m_Icon: {fileID: 0}
@@ -626,8 +499,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: eb291c73d21b219499d31d191a0b587e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -710,7 +583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433135953}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Cyber Train
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -745,7 +618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438158739}
   - component: {fileID: 438158740}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -802,8 +675,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f27eddcc0dccf5243961abd8260a1d10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -826,7 +699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 499316951}
   - component: {fileID: 499316952}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -883,8 +756,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2750943f2e7637c4c831e42f5183038c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -907,7 +780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 655555799}
   - component: {fileID: 655555800}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -964,8 +837,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f27eddcc0dccf5243961abd8260a1d10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -988,7 +861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 723653903}
   - component: {fileID: 723653904}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1045,8 +918,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc3caf253ce83974aa6532c87bcf2814, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1069,7 +942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 751832530}
   - component: {fileID: 751832531}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1126,8 +999,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2750943f2e7637c4c831e42f5183038c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1140,63 +1013,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &771218865
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 771218866}
-  - component: {fileID: 771218867}
-  m_Layer: 10
-  m_Name: Train Edge (1)
-  m_TagString: Edge
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &771218866
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771218865}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.28, y: -0.28232288, z: -25.03093}
-  m_LocalScale: {x: 1.9902, y: 1.9902, z: 1.9902}
-  m_Children: []
-  m_Father: {fileID: 1587142073}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &771218867
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771218865}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.026210696, y: -0.38041306}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.29752702, y: 0.23917386}
-  m_EdgeRadius: 0
 --- !u!1 &900532194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 900532196}
   - component: {fileID: 900532195}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1267,7 +1083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 986909710}
   - component: {fileID: 986909711}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1324,8 +1140,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc3caf253ce83974aa6532c87bcf2814, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1348,7 +1164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1039769797}
   - component: {fileID: 1039769798}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1405,8 +1221,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc3caf253ce83974aa6532c87bcf2814, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1430,7 +1246,7 @@ GameObject:
   - component: {fileID: 1348786204}
   - component: {fileID: 1348786203}
   - component: {fileID: 1348786202}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1512,7 +1328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1568142873}
   - component: {fileID: 1568142874}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1569,8 +1385,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f27eddcc0dccf5243961abd8260a1d10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1593,7 +1409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1587142073}
   - component: {fileID: 1587142074}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1614,8 +1430,6 @@ Transform:
   - {fileID: 723653903}
   - {fileID: 18742499}
   - {fileID: 1568142873}
-  - {fileID: 771218866}
-  - {fileID: 51506734}
   m_Father: {fileID: 433135953}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1655,7 +1469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1685410531}
   - component: {fileID: 1685410530}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1705,76 +1519,6 @@ Transform:
   m_Father: {fileID: 433135953}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1863542470
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1863542471}
-  - component: {fileID: 1863542472}
-  - component: {fileID: 1863542473}
-  m_Layer: 10
-  m_Name: Edge Detector (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1863542471
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863542470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.119, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2092687471}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1863542472
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863542470}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.24165234, y: -0.00000017881393}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.024268806, y: 0.5258131}
-  m_EdgeRadius: 0
---- !u!114 &1863542473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863542470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad4290007899ebd4bb448ae404d8b868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1884551897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,7 +1530,7 @@ GameObject:
   - component: {fileID: 1884551898}
   - component: {fileID: 1884551899}
   - component: {fileID: 1884551900}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Ground Check
   m_TagString: Function
   m_Icon: {fileID: 0}
@@ -1855,7 +1599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1981253952}
   - component: {fileID: 1981253953}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Train Car Part (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1912,8 +1656,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2750943f2e7637c4c831e42f5183038c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1972,7 +1716,7 @@ GameObject:
   - component: {fileID: 2025762894}
   - component: {fileID: 2025762893}
   - component: {fileID: 2025762895}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2077,8 +1821,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
+  m_SortingLayerID: -294254693
+  m_SortingLayer: 1
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: be18455080618b44db556aaa8037d054, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2120,157 +1864,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
---- !u!1 &2092687469
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2092687471}
-  - component: {fileID: 2092687470}
-  - component: {fileID: 2092687474}
-  - component: {fileID: 2092687472}
-  - component: {fileID: 2092687473}
-  m_Layer: 10
-  m_Name: Basic Enemy
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!212 &2092687470
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092687469}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -571367491
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a772eb531a72a0b4e99d10aeeb791402, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.84, y: 0.85}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &2092687471
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092687469}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.13, y: -2.5, z: -0.18798828}
-  m_LocalScale: {x: 1.9902, y: 1.9902, z: 1.9902}
-  m_Children:
-  - {fileID: 27455642}
-  - {fileID: 1863542471}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2092687472
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092687469}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0081756115, y: -0.02997537}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.84, y: 0.85}
-    newSize: {x: 0.84, y: 0.85}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7146481, y: 0.6483468}
-  m_EdgeRadius: 0
---- !u!50 &2092687473
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092687469}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &2092687474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092687469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f9b56e065d29fb4b93f33f3c89691ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 10
-  dmg: 5
-  spd: 5
-  attSpd: 1
-  isEdge: 0
-  state: 0
 --- !u!212 &2055960583515148640
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2307,8 +1900,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1716554317
-  m_SortingLayer: 0
+  m_SortingLayerID: -1759056343
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6fd3acab520fb1c4a8d8e8f4c7eeeef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2388,8 +1981,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1716554317
-  m_SortingLayer: 0
+  m_SortingLayerID: -1759056343
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6fd3acab520fb1c4a8d8e8f4c7eeeef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2462,7 +2055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e92540d60ffd242beb2f9ed9493c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 10
   startX: -30
   endX: -4.5
 --- !u!4 &8096718516713009864
@@ -2555,8 +2148,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1716554317
-  m_SortingLayer: 0
+  m_SortingLayerID: -1759056343
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6fd3acab520fb1c4a8d8e8f4c7eeeef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2636,8 +2229,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1716554317
-  m_SortingLayer: 0
+  m_SortingLayerID: -1759056343
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6fd3acab520fb1c4a8d8e8f4c7eeeef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2717,8 +2310,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1716554317
-  m_SortingLayer: 0
+  m_SortingLayerID: -1759056343
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6fd3acab520fb1c4a8d8e8f4c7eeeef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2767,8 +2360,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1716554317
-  m_SortingLayer: 0
+  m_SortingLayerID: -1759056343
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6fd3acab520fb1c4a8d8e8f4c7eeeef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2848,8 +2441,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1716554317
-  m_SortingLayer: 0
+  m_SortingLayerID: -1759056343
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6fd3acab520fb1c4a8d8e8f4c7eeeef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2946,8 +2539,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1716554317
-  m_SortingLayer: 0
+  m_SortingLayerID: -1759056343
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6fd3acab520fb1c4a8d8e8f4c7eeeef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3027,8 +2620,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1716554317
-  m_SortingLayer: 0
+  m_SortingLayerID: -1759056343
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6fd3acab520fb1c4a8d8e8f4c7eeeef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
