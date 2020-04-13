@@ -80,8 +80,6 @@
     <Compile Include="Assets\_Scripts\TestDummyContorller.cs" />
     <Compile Include="Assets\_Scripts\Train.cs" />
     <Compile Include="Assets\_Scripts\Waypoint.cs" />
-    <Compile Include="Assets\_Scripts\_Overhaul\Enemy AI\EdgeDetect.cs" />
-    <Compile Include="Assets\_Scripts\_Overhaul\Enemy AI\Enemy.cs" />
     <Compile Include="Assets\_Scripts\_Overhaul\Player\Grounded.cs" />
     <Compile Include="Assets\_Scripts\_Overhaul\Player\Player.cs" />
     <Compile Include="Assets\_Scripts\_Overhaul\Player\PlayerMove2D.cs" />
