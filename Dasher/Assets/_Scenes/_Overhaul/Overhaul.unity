@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ab271b730f18d41a0129378007bf89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spd: 7
+  Spd: 8
   JumpForce: 7
   isGrounded: 0
 --- !u!50 &8901920
@@ -1064,7 +1064,7 @@ GameObject:
   - component: {fileID: 723273147}
   m_Layer: 11
   m_Name: Enemy_Collider
-  m_TagString: Function
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
