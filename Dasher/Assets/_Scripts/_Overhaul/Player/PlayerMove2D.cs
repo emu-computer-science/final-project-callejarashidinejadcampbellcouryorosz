@@ -4,7 +4,8 @@ using UnityEngine;
 
 // Overhaul Player Movement Class
 public class PlayerMove2D : MonoBehaviour
-{
+{ 
+
     // Speed Attribute
     public float Spd;
 

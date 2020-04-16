@@ -27,7 +27,7 @@ public class Grounded : MonoBehaviour
         if(collision.collider.tag == "Ground")
         {
             // On the Ground
-            Player.GetComponent<PlayerMove2D>().isGrounded = true;
+            Player.GetComponent<PlayerController>().isGrounded = true;
         } 
     }
 
@@ -38,7 +38,7 @@ public class Grounded : MonoBehaviour
         if (collision.collider.tag == "Ground")
         {
             // Off the Ground
-            Player.GetComponent<PlayerMove2D>().isGrounded = false;
+            Player.GetComponent<PlayerController>().isGrounded = false;
         }
     }
 }
