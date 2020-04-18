@@ -7,32 +7,43 @@ public class Bullet : MonoBehaviour
     private float speed = 20f;
     public Rigidbody2D rb;
     //Retrieves damage from PlayerCombat class
-    private int damage = PlayerCombat.attackDamage;
-    private float lifeTime = 1f;
+    private int damage = OverhaulCombat.attackDamage;
+    private float lifeTime = 3f;
     void Start()
     {
-
         //Makes bullet move in direction player is facing
 
-        if (TestDummyContorller.facingRight)
+        if (PlayerController.isFacingRight)
             rb.velocity = transform.right * speed;
         else
-            rb.velocity = transform.right * speed * -1;
+            rb.velocity = transform.right * speed;
         Destroy(gameObject, lifeTime);
 
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        //Checks if enemy was hit
-        EnemyClass enemy = hitInfo.GetComponent<EnemyClass>();
-        if (enemy != null)
+        //Makes editor happy
+        EnemyBasic enemy = null;
+
+        //Destroyes bullet on collision with anything but player, potions, or enemy detection
+        if (!hitInfo.CompareTag("Player") && !hitInfo.CompareTag("Potions") && !hitInfo.CompareTag("Function"))
         {
-            enemy.takeDamage(damage);
-        }
-        //Destroyes bullet on collision with any but player
-        if (hitInfo.gameObject.tag != "Player" || hitInfo.gameObject.tag != "Potions")
+            Debug.Log(hitInfo.CompareTag("Function"));
             Destroy(gameObject);
+        }
+
+        if (hitInfo.CompareTag("Enemy"))
+        {
+            //hitInfo is actually hitting collider of enemy not enemy itself
+            //So we need to get parent of collider where the EnemyBasic script resides
+            if (hitInfo.transform.parent != null)
+                enemy = hitInfo.transform.parent.GetComponent<EnemyBasic>();
+            else
+                enemy = hitInfo.GetComponent<EnemyBasic>();
+            if (enemy != null)
+                enemy.takeDamage(damage);
+        }
     }
 }
 

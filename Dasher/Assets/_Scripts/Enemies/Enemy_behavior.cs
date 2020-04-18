@@ -4,7 +4,7 @@ using UnityEngine;
 
 // Enemy Behavior Class
 public class Enemy_behavior : MonoBehaviour
-{   
+{
     // Public Variables
     #region Public Variables
     public Transform rayCast;       // The Raycast GameObject
@@ -21,7 +21,7 @@ public class Enemy_behavior : MonoBehaviour
     private GameObject target;      // The Player GameObject
     private Animator anim;
     private float distance;         // Store the distance between enemy and player
-    private bool attackMode;        // Boolean, if it's attacking or not
+    public static bool attackMode;        // Boolean, if it's attacking or not
     private bool inRange;           // Check if Player is in range
     private bool cooling;           // Check if Enemy is cooling down after attack
     private float intTimer;
@@ -39,7 +39,7 @@ public class Enemy_behavior : MonoBehaviour
     {
 
         // If the player is in range
-        if(inRange == true)
+        if (inRange == true)
         {
             // Shoot a raycast and store the information into the hit variable
             hit = Physics2D.Raycast(rayCast.position, Vector2.left, rayCastLength, raycastMask);
@@ -48,7 +48,7 @@ public class Enemy_behavior : MonoBehaviour
             RaycastDebugger();
         }
 
-        if(target != null)
+        if (target != null)
         {
             // If the Target is to the right of the enemy
             if (target.transform.position.x > transform.position.x)
@@ -66,20 +66,20 @@ public class Enemy_behavior : MonoBehaviour
         }
 
         // If the player is detected
-        if(hit.collider != null)
+        if (hit.collider != null)
         {
             // Call Enemy Logic
             EnemyLogic();
         }
         // Else If the hit is nothing
-        else if(hit.collider == null)
+        else if (hit.collider == null)
         {
             // The Player isn't in range
             inRange = false;
         }
 
         // If the Player isn't in Range
-        if(inRange == false)
+        if (inRange == false)
         {
             // Stop the Walking Animation
             anim.SetBool("canWalk", false);
@@ -93,7 +93,7 @@ public class Enemy_behavior : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D trig)
     {
         // If the Collision was caused by the Player
-        if(trig.gameObject.tag == "Player")
+        if (trig.gameObject.tag == "Player")
         {
             // The Target is the Player
             target = trig.gameObject;
@@ -110,7 +110,7 @@ public class Enemy_behavior : MonoBehaviour
         distance = Vector2.Distance(transform.position, target.transform.position);
 
         // If distance is greater than attack distance
-        if(distance > attackDistance)
+        if (distance > attackDistance)
         {
             // Calling Move Method
             Move();
@@ -119,7 +119,7 @@ public class Enemy_behavior : MonoBehaviour
             StopAttack();
         }
         // Else If the attack distance is equal or greater than the distance and the cooldown is over or not active
-        else if(attackDistance >= distance && cooling == false)
+        else if (attackDistance >= distance && cooling == false)
         {
             Attack();
         }
@@ -144,7 +144,7 @@ public class Enemy_behavior : MonoBehaviour
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attack_Basic_Enemy") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Idle_Basic_Enemy"))
         {
             // Getting Target's Position
-                // We only take it's x position, we don't need it's y. So we're using the Enemies
+            // We only take it's x position, we don't need it's y. So we're using the Enemies
             Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
 
             // Start Moving Toward the Player
@@ -160,6 +160,7 @@ public class Enemy_behavior : MonoBehaviour
 
         anim.SetBool("canWalk", false); // Setting Walk to False
         anim.SetBool("Attack", true);   // Setting Attack to true
+
     }
 
     // Stop Attack Method
@@ -174,7 +175,7 @@ public class Enemy_behavior : MonoBehaviour
     void RaycastDebugger()
     {
         // If the distance between the enemy and the player is greater than the attack distance
-        if(distance > attackDistance)
+        if (distance > attackDistance)
         {
 
             // If the Target is to the right of the enemy
@@ -190,7 +191,7 @@ public class Enemy_behavior : MonoBehaviour
             }
         }
         // If the attack distance is greater than the distance between the enemy and the player
-        else if(attackDistance > distance)
+        else if (attackDistance > distance)
         {
             // If the Target is to the right of the enemy
             if (target.transform.position.x > transform.position.x)
@@ -213,7 +214,7 @@ public class Enemy_behavior : MonoBehaviour
         timer -= Time.deltaTime;
 
         // If the Timer is less than 0 & cooling is true & attackMode is true
-        if(timer <= 0 && cooling == true && attackMode == true)
+        if (timer <= 0 && cooling == true && attackMode == true)
         {
             // Cooldown is False
             cooling = false;

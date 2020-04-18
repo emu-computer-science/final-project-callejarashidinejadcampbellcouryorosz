@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Scenes/_Overhaul/Overhaul_Player.unity
+- path: Assets/_Scenes/_Overhaul/Overhaul_Combat.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
