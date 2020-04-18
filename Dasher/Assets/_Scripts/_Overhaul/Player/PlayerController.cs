@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     #region
     // Private Variables
     private float movementInputDirection;           // Storing the direction of the player
-    private bool isFacingRight = true;              // Direction of the Player
+    public static bool isFacingRight = true;              // Direction of the Player
     private bool isWalking;                         // Is the player walking?
     private bool isJumping;                         // Is the player jumping?
     #endregion
@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
     // Update Method
     void Update()
-    { 
+    {
         CheckInput();           // Call CheckInput
         CheckMoveDirection();   // Call CheckMoveDirection
         UpdateAnimations();     // Call UpdateAnimations
@@ -50,17 +50,17 @@ public class PlayerController : MonoBehaviour
     // Method to Check Direction
     private void CheckMoveDirection()
     {
-   
-        if(isFacingRight == true && movementInputDirection < 0)     // If the Player is facing right
+
+        if (isFacingRight == true && movementInputDirection < 0)     // If the Player is facing right
         {
             Flip();             // Flip the Player
         }
-        else if(!isFacingRight && movementInputDirection > 0)       // If the Player is facing left
+        else if (!isFacingRight && movementInputDirection > 0)       // If the Player is facing left
         {
             Flip();             // Flip the Player
         }
-        
-        if(rb.velocity.x != 0)  // If the Player is moving
+
+        if (rb.velocity.x != 0)  // If the Player is moving
         {
             // Walking is True
             isWalking = true;
@@ -94,8 +94,8 @@ public class PlayerController : MonoBehaviour
     private void CheckInput()
     {
         // This determine whether the player is pressing "a" or "d"
-            // Returns -1 if it's "a" and returns 1 if it's "d"
-                // If it was Input.GetAxis, it would return a number between 0 and -1, and 0 and 1
+        // Returns -1 if it's "a" and returns 1 if it's "d"
+        // If it was Input.GetAxis, it would return a number between 0 and -1, and 0 and 1
         movementInputDirection = Input.GetAxisRaw("Horizontal");
 
         // If they press jump
