@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/_Scenes/_Overhaul/Overhaul_Combat.unity
+=======
+- path: Assets/_Scenes/Train_Inside.unity
+>>>>>>> 1ceff448332077e8f97154f93d9d29fd5020512c
   isLoaded: 1
   isActive: 1
   isSubScene: 0
