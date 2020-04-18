@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(PlayerPhysics))]
 
@@ -37,7 +38,7 @@ public class PlayerControllerInput : MonoBehaviour
                 amountToMove.y = jumpHeight;
             }
         }
-
+        
         amountToMove.x = currentSpeed;
         amountToMove.y -= gravity * Time.deltaTime;
         playerPhysics.Move(amountToMove * Time.deltaTime);

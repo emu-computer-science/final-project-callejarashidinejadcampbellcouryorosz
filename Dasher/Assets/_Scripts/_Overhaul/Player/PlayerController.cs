@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // PlayerController Class
 public class PlayerController : MonoBehaviour
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
         CheckInput();           // Call CheckInput
         CheckMoveDirection();   // Call CheckMoveDirection
         UpdateAnimations();     // Call UpdateAnimations
+        CheckScene();           //checks to see if scene needs transitioning.
     }
 
     // Fixed Update Method
@@ -122,5 +124,16 @@ public class PlayerController : MonoBehaviour
     {
         isFacingRight = !isFacingRight;         // This will automatically switch to the other side
         transform.Rotate(0.0f, 180.0f, 0.0f);   // Rotate the Player in 180 degrees
+    }
+    private void CheckScene()
+    {
+        if (GameObject.FindGameObjectWithTag("Player").transform.position.x > 81 && isGrounded && SceneManager.GetActiveScene().name == "Overhaul_Player")
+        {
+            SceneManager.LoadScene("Train_Inside", LoadSceneMode.Single);
+        }
+        if (GameObject.FindGameObjectWithTag("Player").transform.position.y > 3 && SceneManager.GetActiveScene().name == "Train_Inside")
+        {
+            SceneManager.LoadScene("Overhaul_Player", LoadSceneMode.Single);
+        }
     }
 }

@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scenes/_Overhaul/Overhaul_Player.unity
+    guid: 1219314bedc3f6447bf8d15f44ce0076
+  - enabled: 1
+    path: Assets/_Scenes/Train_Inside.unity
+    guid: 2d53c45254648944996fe86275aaac97
   m_configObjects: {}
