@@ -8,8 +8,6 @@ public class EnemyBasic : MonoBehaviour
     // Basic Stats
     public float hp;
     public float dmg;
-    public float giveDmg;
-    private GameObject target;
 
     // Take Damage Method
     public void takeDamage(int damage)
@@ -29,36 +27,10 @@ public class EnemyBasic : MonoBehaviour
         }
     }
 
-    // Attack HP Method
-    public void AttackHP()
-    {
-        PlayerHealthManager player = target.GetComponent<PlayerHealthManager>();
-        player.takeDamage(giveDmg);
-    }
-
+    // Update Method
     void Update()
     {
-        if (Enemy_behavior.attackMode)
-        {
-            AttackHP();
-        }
+        // Check if Enemy is dead
         Death();
-    }
-
-    void CheckAttack()
-    {
-        if (target.GetComponentInChildren<Collider2D>())
-        {
-
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D trig)
-    {
-        if (trig.gameObject.tag == "Player")
-        {
-            // The Target is the Player
-            target = trig.gameObject;
-        }
     }
 }

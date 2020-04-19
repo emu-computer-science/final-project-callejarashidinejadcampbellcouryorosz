@@ -21,7 +21,7 @@ public class Enemy_behavior : MonoBehaviour
     private GameObject target;      // The Player GameObject
     private Animator anim;
     private float distance;         // Store the distance between enemy and player
-    public static bool attackMode;        // Boolean, if it's attacking or not
+    private bool attackMode;        // Boolean, if it's attacking or not
     private bool inRange;           // Check if Player is in range
     private bool cooling;           // Check if Enemy is cooling down after attack
     private float intTimer;
@@ -160,7 +160,6 @@ public class Enemy_behavior : MonoBehaviour
 
         anim.SetBool("canWalk", false); // Setting Walk to False
         anim.SetBool("Attack", true);   // Setting Attack to true
-
     }
 
     // Stop Attack Method

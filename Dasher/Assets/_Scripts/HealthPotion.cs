@@ -11,13 +11,13 @@ public class HealthPotion : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        hp = player.GetComponent<TestDummyContorller>().hp;
-        maxhp = player.GetComponent<TestDummyContorller>().maxhp;
+        hp = player.GetComponent<PlayerHealthManager>().hp;
+        maxhp = player.GetComponent<PlayerHealthManager>().hp;
     }
 
     public void Use()
     {
-        player.GetComponent<TestDummyContorller>().hp = maxhp;
+        player.GetComponent<PlayerHealthManager>().hp = maxhp;
         Destroy(gameObject);
     }
 }
