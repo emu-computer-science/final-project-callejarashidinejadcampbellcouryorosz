@@ -94,8 +94,8 @@ public class PlayerController : MonoBehaviour
     private void CheckInput()
     {
         // This determine whether the player is pressing "a" or "d"
-        // Returns -1 if it's "a" and returns 1 if it's "d"
-        // If it was Input.GetAxis, it would return a number between 0 and -1, and 0 and 1
+            // Returns -1 if it's "a" and returns 1 if it's "d"
+            // If it was Input.GetAxis, it would return a number between 0 and -1, and 0 and 1
         movementInputDirection = Input.GetAxisRaw("Horizontal");
 
         // If they press jump
