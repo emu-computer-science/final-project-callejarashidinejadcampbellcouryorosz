@@ -12,6 +12,8 @@ TagManager:
   - Waypoints
   - Enemy
   - Collectable
+  - Tile Maps
+  - Foreground
   layers:
   - Default
   - TransparentFX
