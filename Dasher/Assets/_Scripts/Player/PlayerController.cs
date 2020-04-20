@@ -136,6 +136,11 @@ public class PlayerController : MonoBehaviour
             // Load Train Inside Scene
             SceneManager.LoadScene("CyberSpace_Level", LoadSceneMode.Single);
         }
+        //player beats cyberspace
+        if(GameObject.FindGameObjectWithTag("Player").transform.position.x > 66 && isGrounded && SceneManager.GetActiveScene().name == "CyberSpace_Level")
+        {
+            SceneManager.LoadScene("Train_Inside", LoadSceneMode.Single);
+        }
         // If the Player goes upstairs
         if (GameObject.FindGameObjectWithTag("Player").transform.position.y > 3 && SceneManager.GetActiveScene().name == "Train_Inside")
         {
