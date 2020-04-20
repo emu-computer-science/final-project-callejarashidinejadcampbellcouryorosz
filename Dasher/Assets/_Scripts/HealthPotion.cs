@@ -12,7 +12,7 @@ public class HealthPotion : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         hp = player.GetComponent<PlayerHealthManager>().hp;
-        maxhp = player.GetComponent<PlayerHealthManager>().hp;
+        maxhp = player.GetComponent<PlayerHealthManager>().startHp;
     }
 
     public void Use()

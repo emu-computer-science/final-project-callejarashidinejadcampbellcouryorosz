@@ -20,21 +20,24 @@ public class OverhaulCombat : MonoBehaviour
 
     public LayerMask enemiesLayer;
 
+    public int maxAmmo = 10;
+    public int currentAmmo;
+
 
     void Start()
     {
-        //Controls what weapons are displayed by defualt
-        //sword.SetActive(false);
-        //gun.SetActive(true);
+        currentAmmo = maxAmmo;
     }
 
     void Update()
     {
-        if (Time.time >= nextAttackTime)
+        if (Time.time >= nextAttackTime && currentAmmo > 0)
         {
             if (Input.GetMouseButton(0))
             {
                 shoot();
+                currentAmmo = currentAmmo - 1;
+                Debug.Log("Current Ammo: " + currentAmmo);
                 //Resets attack timer
                 nextAttackTime = Time.time + 1f / attackRate;
             }

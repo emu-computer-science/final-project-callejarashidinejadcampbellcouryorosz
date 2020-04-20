@@ -1,12 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Player Health Manager Class
 public class PlayerHealthManager : MonoBehaviour
 {
     // Hp for Player
     public float hp;
+    public float startHp;
+
+    void Start()
+    {
+        hp = startHp;
+    }
 
     // Update is called once per frame
     void Update()
@@ -20,7 +27,6 @@ public class PlayerHealthManager : MonoBehaviour
     {
         // Health is equal to previous health minus damage
         hp = hp - damage;
-
         Debug.Log("Player HP: " + hp);
     }
 
@@ -34,12 +40,13 @@ public class PlayerHealthManager : MonoBehaviour
             Death();
         }
     }
-    
+
     // Destroy Player
     public void Death()
     {
         Debug.Log("Player has Died");
         Destroy(gameObject);
-        gameObject.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //gameObject.SetActive(false);
     }
 }

@@ -9,6 +9,8 @@ public class EnemyBasic : MonoBehaviour
     public float hp;
     public float dmg;
 
+    public GameObject ammoPrefab;
+
     // Take Damage Method
     public void takeDamage(int damage)
     {
@@ -24,6 +26,13 @@ public class EnemyBasic : MonoBehaviour
         {
             // Destroy the Enemy
             Destroy(gameObject);
+            if (ammoPrefab != null)
+            {
+                //Gets enemy position
+                Vector2 enemyPos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+                //Drops ammoPrefab on enemy Death
+                Instantiate(ammoPrefab, enemyPos, Quaternion.identity);
+            }
         }
     }
 
