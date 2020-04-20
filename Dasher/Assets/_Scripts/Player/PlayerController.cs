@@ -127,13 +127,14 @@ public class PlayerController : MonoBehaviour
     }
 
     // Check Scene Method
+    
     private void CheckScene()
     {
         // If the Player goes to the light
         if (GameObject.FindGameObjectWithTag("Player").transform.position.x > 81 && isGrounded && SceneManager.GetActiveScene().name == "Game_Demo")
         {
             // Load Train Inside Scene
-            SceneManager.LoadScene("Train_Inside", LoadSceneMode.Single);
+            SceneManager.LoadScene("CyberSpace_Level", LoadSceneMode.Single);
         }
         // If the Player goes upstairs
         if (GameObject.FindGameObjectWithTag("Player").transform.position.y > 3 && SceneManager.GetActiveScene().name == "Train_Inside")

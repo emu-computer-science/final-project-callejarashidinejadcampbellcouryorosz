@@ -1942,6 +1942,8 @@ MonoBehaviour:
   enemiesLayer:
     serializedVersion: 2
     m_Bits: 2048
+  maxAmmo: 50
+  currentAmmo: 50
 --- !u!114 &838432292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1970,6 +1972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  startHp: 100
 --- !u!50 &838432294
 Rigidbody2D:
   serializedVersion: 4
@@ -2322,6 +2325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 25
   dmg: 5
+  ammoPrefab: {fileID: 0}
 --- !u!114 &1028428792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2899,6 +2903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 25
   dmg: 5
+  ammoPrefab: {fileID: 0}
 --- !u!114 &1311745835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3404,6 +3409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 25
   dmg: 5
+  ammoPrefab: {fileID: 0}
 --- !u!114 &1374783384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3785,6 +3791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 25
   dmg: 5
+  ammoPrefab: {fileID: 0}
 --- !u!114 &1637698550
 MonoBehaviour:
   m_ObjectHideFlags: 0
